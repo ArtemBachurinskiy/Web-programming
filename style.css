@@ -1,0 +1,124 @@
+body
+{
+    border: 1px solid rgb(0, 3, 161);
+    border-radius: 7px;
+    background-color: rgb(208, 220, 255);
+    text-align: center;
+    font-family: serif;
+}
+
+/* пример свойства стилей CSS - наследование (inherit) */
+header 
+{
+    border: inherit;
+    border-radius: inherit;
+    background-color: rgba(133, 156, 255, 0.596);
+    color: rgb(0, 3, 161);
+    font-size: 10px;
+}
+
+/* пример свойства стилей CSS - каскадирование */
+header
+{
+    font-size: 27px;
+}
+
+.figure 
+{
+    fill: blue;
+    fill-opacity: 0.4;
+    stroke: blue;
+}
+
+/* пример селектора элементов */
+form 
+{
+    width: 455px;
+    padding: 0px;
+    display: inline-block;
+}
+
+/* пример селектора потомств (потомков) */
+form input 
+{
+    background-color: rgba(133, 156, 255, 0.596)
+}
+
+form div
+{
+    margin: 25px;
+}
+
+/* пример селектора атрибутов */
+input[type="text"]
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    outline: none;
+    width: 40%;
+}
+
+/* пример селектора псевдоэлементов */
+label::before
+{
+    content: " ";
+    display: inline-block;
+}
+
+.btn
+{
+    text-align: center;
+    padding: 1px 1px;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn_submit
+{
+    background: #5a0;
+    color: white;
+    font-size: x-large;
+}
+
+.btn_reset
+{
+    background: #c20;
+    font-size: x-large;
+}
+
+a 
+{
+    text-decoration: none; 
+    color: white;
+}
+
+table
+{
+    width: 600px; 
+    margin: 3px auto;
+    border-collapse: collapse;
+    border: 3px solid rgba(62, 71, 165, 0.8);
+}
+
+td, th 
+{
+    padding: 3px; 
+    border: 1px solid rgba(62, 71, 165, 0.8); 
+}
+
+th 
+{
+    background: rgba(133, 156, 255, 0.596);
+}
+
+#in_area
+{
+    color: green
+}
+
+#out_of_area
+{
+    color: red
+}
